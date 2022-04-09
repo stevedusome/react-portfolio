@@ -1,5 +1,6 @@
 import './App.css';
 import MainMenu from './MainMenu'
+import PortfolioPage from './PortfolioPage';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       </div>
 
       <div className="maindiv">
-      <MainMenu />
+      <PortfolioPage />
 
       </div>
 
