@@ -1,8 +1,8 @@
 import React from 'react'
-import contacticon1 from './assets/icons-github.svg'
-import contacticon2 from './assets/icons-linkedin.svg'
-import contacticon3 from './assets/icons-mailbox.svg'
-import contacticon4 from './assets/icons-instagram.svg'
+import contacticon1 from '../assets/icons-github.svg'
+import contacticon2 from '../assets/icons-linkedin.svg'
+import contacticon3 from '../assets/icons-mailbox.svg'
+import contacticon4 from '../assets/icons-instagram.svg'
 
 export default function ContactPage(){
     return (<div>
