@@ -339,6 +339,12 @@ inset -3px -3px 5px #ffffff;
   opacity: 40%;
 }
 
+.download-icon-img {
+  width: 120px;
+  height: 120px;
+  opacity: 40%;
+}
+
 .contact-icon {
   padding: 2em;
 }
