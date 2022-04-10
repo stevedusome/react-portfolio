@@ -1,8 +1,8 @@
 import React from 'react'
-import portphoto1 from './assets/spacedout.png'
-import portphoto2 from './assets/imagesmash.png'
-import portphoto3 from './assets/oldport.png'
-import portphoto4 from './assets/codequiz.png'
+import portphoto1 from '../assets/spacedout.png'
+import portphoto2 from '../assets/imagesmash.png'
+import portphoto3 from '../assets/oldport.png'
+import portphoto4 from '../assets/codequiz.png'
 
 export default function PortfolioPage (){
     return (<div>
