@@ -105,6 +105,10 @@ body {
   align-items: center;
   width: 100%;
   padding-inline: 3em;
+  position:fixed;
+  top:0;
+  z-index: 99;
+  background-color: #f5f5f5;
 }
 
 .headerh1 {
@@ -150,8 +154,8 @@ body {
 .bottombar div {
   width: 33%;
   padding-inline: 1em;
-  border-right: solid #3e3e3e3e 1px;
-  color: #3e3e3e3e;
+  border-right: solid #3e3e3e70 1px;
+  color: #3e3e3e70;
 }
 
 .bold {
@@ -163,9 +167,9 @@ body {
 }
 
 .iconwing p {
-  color: #3e3e3e3e;
+  color: #3e3e3e70;
   padding-block: 1em;
-  border-bottom: solid #3e3e3e3e 1px;
+  border-bottom: solid #3e3e3e70 1px;
 }
 
 .iconwing p:last-child {
@@ -231,6 +235,7 @@ inset -3px -3px 5px #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f5f5f5;
 }
 
 .parent {
@@ -310,5 +315,29 @@ inset -3px -3px 5px #ffffff;
 
 .caption {
   width: 20%;
-  color: #3e3e3e3e;
+  color: #3e3e3e70;
+}
+
+.fullparent {
+  height: 100vh;
+  padding-top: 5em;
+}
+
+.contact-div {
+  margin: 0 auto;
+  width: 100%;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon-img {
+  width: 60px;
+  height: 60px;
+  opacity: 40%;
+}
+
+.contact-icon {
+  padding: 2em;
 }
