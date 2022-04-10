@@ -1,5 +1,5 @@
 import React from 'react'
-import myphoto from './myphoto.jpg'
+import myphoto from '../assets/myphoto.jpg'
 
 export default function MainMenu (){
     return (<div>
