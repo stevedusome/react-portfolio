@@ -10,26 +10,26 @@ export default function ContactPage(){
         <div className="contact-div">
 
         <div className="contact-icon">
-           <a href="https://spaced-problems.herokuapp.com/" target="_blank">
+           <a href="https://github.com/stevedusome/" target="_blank">
                 <img src={contacticon1} className="contact-icon-img" alt="Github" />
             </a>
         </div>
 
         <div className="contact-icon">
-           <a href="https://spaced-problems.herokuapp.com/" target="_blank">
-                <img src={contacticon2} className="contact-icon-img" alt="Github" />
+           <a href="https://www.linkedin.com/in/steve-dusome-935713233/" target="_blank">
+                <img src={contacticon2} className="contact-icon-img" alt="Linkedin" />
             </a>
         </div>
 
         <div className="contact-icon">
-           <a href="https://spaced-problems.herokuapp.com/" target="_blank">
-                <img src={contacticon3} className="contact-icon-img" alt="Github" />
+           <a href="mailto:stevedusome@gmail.com" target="_blank">
+                <img src={contacticon3} className="contact-icon-img" alt="Email" />
             </a>
         </div>
 
         <div className="contact-icon">
-           <a href="https://spaced-problems.herokuapp.com/" target="_blank">
-                <img src={contacticon4} className="contact-icon-img" alt="Github" />
+           <a href="https://www.instagram.com/stevieponders/" target="_blank">
+                <img src={contacticon4} className="contact-icon-img" alt="Instagram" />
             </a>
         </div>
 

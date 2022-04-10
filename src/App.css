@@ -112,7 +112,7 @@ body {
 }
 
 .headerh1 {
-  font-size: 3em;
+  font-size: 2.7em;
   color:#3e3e3e3e;
   text-shadow: 3px 3px 5px #d0d0d0,
   -3px -3px 5px #ffffff;
@@ -121,7 +121,8 @@ body {
 
 .navbar {
   color:#3e3e3e3e;
-  padding: 1em 2.2em;
+  font-size: 1em;
+  padding: 1em 2em;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #d0d0d0,
   -3px -3px 5px #ffffff;
