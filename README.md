@@ -1,6 +1,16 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Home Page[image](https://user-images.githubusercontent.com/93408247/162660885-b146c323-cc0a-4468-ab62-54f7bde1d20b.png)
+Portfolio[image](https://user-images.githubusercontent.com/93408247/162660965-f416ee39-1ced-48b3-943c-c23402956768.png)
+Contact[image](https://user-images.githubusercontent.com/93408247/162660974-4a9e25a2-5a24-426d-93ec-9f67a5f50b42.png)
+Resume[image](https://user-images.githubusercontent.com/93408247/162660990-8c184a8b-3812-48b2-8e39-8754d69f0149.png)
+
+This portfolio was made with a minimal aesthetic and immediate use in mind. for that reason i have included 4 pieces instead of 6 as i believe an employer will only look at 6 and i could achieve a superior design this way. next steps would include revising the function that sets the "activenav" so that it works with the sideways arrows and not just the clicked nav items
+
+I also did not include a footer and instead used the contact section for that space, but there is an included example of a regex expression which would do this for posterity
+
+This project was a collaboration with [Tina Sutherland](https://github.com/Tinastouch/)
+
 
 ## Available Scripts
 
