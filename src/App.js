@@ -43,28 +43,40 @@ function App() {
         <nav onClick={(event) => {
           setCurrentPage("Home");
           renderActive(event)
-        }} className="navbar activenav">ABOUT ME</nav>
+        }} className="navbar activenav" id="home-nav">ABOUT ME</nav>
         <nav onClick={(event) => {
           setCurrentPage("Portfolio");
           renderActive(event)
 
-        }} className="navbar">PORTFOLIO</nav>
+        }} className="navbar" id="port-nav">PORTFOLIO</nav>
           <nav onClick={(event) => {
           setCurrentPage("Contact");
           renderActive(event)
 
-        }}  className="navbar">CONTACT</nav>
+        }}  className="navbar" id="cont-nav">CONTACT</nav>
         <nav onClick={(event) => {
           setCurrentPage("Resume");
           renderActive(event)
 
-        }} className="navbar">RESUME</nav>
+        }} className="navbar" id="resu-nav">RESUME</nav>
         </div>
       </header>
 
       <div className="parent fullparent" style={ sectionStyle }>
 
-      <div className="bigbtn">
+      <div className="bigbtn"
+      onClick={(event) => {
+        var oldPage = currentPage;
+        if (oldPage === "Home" ){
+        setCurrentPage("Resume")}
+        else if (oldPage === "Resume" ){
+          setCurrentPage("Contact")} 
+        else if (oldPage === "Contact" ){
+          setCurrentPage("Portfolio")}
+        else if (oldPage === "Portfolio" ){
+            setCurrentPage("Home")} ;
+        renderActive(event)
+      }}>
         <div className="arrow-left">
         </div>
         
@@ -76,7 +88,18 @@ function App() {
 
       </div>
 
-      <div className="bigbtn">
+      <div className="bigbtn"  onClick={(event) => {
+        var oldPage = currentPage;
+        if (oldPage === "Home" ){
+        setCurrentPage("Portfolio")}
+        else if (oldPage === "Resume" ){
+          setCurrentPage("Home")} 
+        else if (oldPage === "Contact" ){
+          setCurrentPage("Resume")}
+        else if (oldPage === "Portfolio" ){
+            setCurrentPage("Contact")} ;
+        renderActive(event)
+      }}>
         <div className="arrow-right">
 
         </div>
