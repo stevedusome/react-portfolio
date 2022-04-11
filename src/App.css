@@ -433,6 +433,7 @@ inset -3px -3px 5px #ffffff;
 .navbar {
   width: 45%;
   flex-grow: 1;
+  font-size: 12px;
 }
 
 h3 {
@@ -467,4 +468,9 @@ h3 {
 .contact-icon {
   padding: 0.5em;
 }
+
+p {
+  font-size: 12px;
+}
+
 }
