@@ -140,7 +140,7 @@ body {
 
 .bottombar {
   min-width: 8em;
-  max-width: 60%;
+  max-width: 70%;
   margin: 1.5em auto;
   border-radius: 5px;
   min-height: 4.5em;
@@ -252,6 +252,16 @@ inset -3px -3px 5px #ffffff;
   gap: 1em;
 }
 
+.row-gapper {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 45vh;
+  align-items: center;
+  justify-content: center;
+}
+
 .my-photo {
   max-width: 100%;
   height: 37vh;
@@ -266,10 +276,6 @@ inset -3px -3px 5px #ffffff;
   gap: 1em;
   justify-content: center;
   align-items: center;
-}
-
-.portfolio-parent:first-of-type {
-  margin-bottom: 1em;
 }
 
 .portfolio-child {
@@ -347,4 +353,118 @@ inset -3px -3px 5px #ffffff;
 
 .contact-icon {
   padding: 2em;
+}
+
+@media screen and (max-width: 1050px) {
+  .App-header {
+    height: 5em;
+    box-shadow: 0px 10px 35px #d0d0d0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5em;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  .maindiv {
+   width: 75%;
+  }
+
+  .portfolio-parent {
+    min-height: 12vw;
+
+  }
+
+  .portfolio-child{
+    width: 12vw;
+    height: 12vw;
+
+  }
+}
+
+@media screen and (max-width: 768px){
+
+
+
+.App-header {height: fit-content;
+  min-height: 10em;
+  flex-direction: column;
+  justify-content: space-around;
+  position:relative
+}
+
+.maindiv {
+  order: -1;
+  width: 90%;
+}
+
+
+.fullparent {
+  padding-top: 0em;
+  flex-wrap: wrap;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.bigbtn {
+  margin: 0px auto 1.5em;
+  position: relative;
+  top: -1.5em;
+
+}
+
+.bottombar {
+  max-width: 90%;
+}
+
+.navparent {
+  flex-wrap: wrap;
+  margin: 1em auto
+}
+
+
+
+}
+
+@media screen and (max-width: 450px){
+.navbar {
+  width: 45%;
+  flex-grow: 1;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.maindiv {
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.parent {
+  padding-inline: 1em;
+}
+
+.center {
+  display:flex;
+  flex-direction: column;
+}
+
+.iconwing {
+  flex-direction: row;
+  min-height: fit-content;
+  border: none;
+  gap: 1em;
+}
+
+.iconwing p {
+  border-bottom: none;
+}
+
+.contact-icon {
+  padding: 0.5em;
+}
 }

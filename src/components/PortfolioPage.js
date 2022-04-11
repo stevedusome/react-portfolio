@@ -7,6 +7,7 @@ import portphoto4 from '../assets/codequiz.png'
 export default function PortfolioPage (){
     return (<div>
         <h3>Portfolio</h3>
+        <div className="row-gapper">
         <div className="portfolio-parent">
         <div className="caption">
                     <p>Spaced Out</p>
@@ -52,7 +53,7 @@ export default function PortfolioPage (){
                     <p>Javascript</p>
                     <p>Code Quiz</p>
                 </div>
-        </div>
+        </div></div>
     </div>)
       
     

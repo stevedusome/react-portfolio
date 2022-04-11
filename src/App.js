@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="headerh1">nxghtswxm dsn</h1>
-        <div className="flexgap">
+        <div className="flexgap navparent">
         <nav onClick={(event) => {
           setCurrentPage("Home");
           renderActive(event)
