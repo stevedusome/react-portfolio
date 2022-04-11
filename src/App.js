@@ -17,6 +17,88 @@ var sectionStyle = {
 function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
+  function renderNav () {
+    if(currentPage === "Home") {
+      return <>
+
+      <nav onClick={() => {
+          setCurrentPage("Home");
+
+        }} className="navbar activenav" id="home-nav">ABOUT ME</nav>
+        <nav onClick={() => {
+          setCurrentPage("Portfolio");
+
+        }} className="navbar" id="port-nav">PORTFOLIO</nav>
+          <nav onClick={() => {
+          setCurrentPage("Contact");
+
+        }}  className="navbar" id="cont-nav">CONTACT</nav>
+        <nav onClick={() => {
+          setCurrentPage("Resume");
+
+        }} className="navbar" id="resu-nav">RESUME</nav>
+        </>
+
+    } else if(currentPage === "Portfolio") {
+      return <>
+      <nav onClick={() => {
+          setCurrentPage("Home");
+
+        }} className="navbar" id="home-nav">ABOUT ME</nav>
+        <nav onClick={() => {
+          setCurrentPage("Portfolio");
+
+        }} className="navbar activenav" id="port-nav">PORTFOLIO</nav>
+          <nav onClick={() => {
+          setCurrentPage("Contact");
+
+        }}  className="navbar" id="cont-nav">CONTACT</nav>
+        <nav onClick={() => {
+          setCurrentPage("Resume");
+
+        }} className="navbar" id="resu-nav">RESUME</nav>
+      </>
+    } else if (currentPage === "Contact") {
+      return <>
+      <nav onClick={() => {
+          setCurrentPage("Home");
+
+        }} className="navbar" id="home-nav">ABOUT ME</nav>
+        <nav onClick={() => {
+          setCurrentPage("Portfolio");
+
+        }} className="navbar" id="port-nav">PORTFOLIO</nav>
+          <nav onClick={() => {
+          setCurrentPage("Contact");
+
+        }}  className="navbar activenav" id="cont-nav">CONTACT</nav>
+        <nav onClick={() => {
+          setCurrentPage("Resume");
+
+        }} className="navbar" id="resu-nav">RESUME</nav>
+      </>
+    }else if (currentPage === "Resume") {
+      return <>
+      <nav onClick={() => {
+          setCurrentPage("Home");
+
+        }} className="navbar" id="home-nav">ABOUT ME</nav>
+        <nav onClick={() => {
+          setCurrentPage("Portfolio");
+
+        }} className="navbar" id="port-nav">PORTFOLIO</nav>
+          <nav onClick={() => {
+          setCurrentPage("Contact");
+
+        }}  className="navbar" id="cont-nav">CONTACT</nav>
+        <nav onClick={() => {
+          setCurrentPage("Resume");
+
+        }} className="navbar activenav" id="resu-nav">RESUME</nav>
+      </>
+    }
+   }
+
   function render () {
     if(currentPage === "Home") {
       return <MainMenu />
@@ -29,10 +111,6 @@ function App() {
     }
    }
 
-   function renderActive (event) {
-    document.querySelector(".activenav").classList.remove("activenav");
-    event.target.classList.add("activenav");
-   }
 
   return (
     <>
@@ -40,32 +118,14 @@ function App() {
       <header className="App-header">
         <h1 className="headerh1">nxghtswxm dsn</h1>
         <div className="flexgap navparent">
-        <nav onClick={(event) => {
-          setCurrentPage("Home");
-          renderActive(event)
-        }} className="navbar activenav" id="home-nav">ABOUT ME</nav>
-        <nav onClick={(event) => {
-          setCurrentPage("Portfolio");
-          renderActive(event)
-
-        }} className="navbar" id="port-nav">PORTFOLIO</nav>
-          <nav onClick={(event) => {
-          setCurrentPage("Contact");
-          renderActive(event)
-
-        }}  className="navbar" id="cont-nav">CONTACT</nav>
-        <nav onClick={(event) => {
-          setCurrentPage("Resume");
-          renderActive(event)
-
-        }} className="navbar" id="resu-nav">RESUME</nav>
+        {renderNav()}
         </div>
       </header>
 
       <div className="parent fullparent" style={ sectionStyle }>
 
       <div className="bigbtn"
-      onClick={(event) => {
+      onClick={() => {
         var oldPage = currentPage;
         if (oldPage === "Home" ){
         setCurrentPage("Resume")}
@@ -75,7 +135,6 @@ function App() {
           setCurrentPage("Portfolio")}
         else if (oldPage === "Portfolio" ){
             setCurrentPage("Home")} ;
-        renderActive(event)
       }}>
         <div className="arrow-left">
         </div>
@@ -88,7 +147,7 @@ function App() {
 
       </div>
 
-      <div className="bigbtn"  onClick={(event) => {
+      <div className="bigbtn"  onClick={() => {
         var oldPage = currentPage;
         if (oldPage === "Home" ){
         setCurrentPage("Portfolio")}
@@ -98,7 +157,6 @@ function App() {
           setCurrentPage("Resume")}
         else if (oldPage === "Portfolio" ){
             setCurrentPage("Contact")} ;
-        renderActive(event)
       }}>
         <div className="arrow-right">
 
