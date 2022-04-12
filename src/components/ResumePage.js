@@ -11,7 +11,7 @@ export default function ResumePage (){
 
         <div className="download-icon">
            <a href={resume} download >
-                <img src={downloadicon} className="contact-icon-img" alt="Github" />
+                <img src={downloadicon} className="download-icon-img" alt="Github" />
             </a>
         </div>
         </div>

@@ -9,7 +9,7 @@ import Background from './assets/marble.jpg';
 
 var sectionStyle = {
   backgroundImage: `url(${Background})`,
-  backgroundPosition: 'bottom',
+  backgroundPosition: 'center',
   backgroundSize: 'cover',
   backgroundRepeat: 'repeat'
 };

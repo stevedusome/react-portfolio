@@ -6,7 +6,29 @@ import contacticon4 from '../assets/icons-instagram.svg'
 
 export default function ContactPage(){
     return (<div>
-        <h3>Contacts</h3>
+        <h3>Contact</h3>
+
+        <div className="contact-parent">
+
+        <form className="contact-form">
+            <div className="input-group">
+            <label className = "email-label"><p>Email</p></label>
+            <input className="email-input" type="text">
+            </input></div>
+
+            <div className="input-group">
+            <label className = "input-label"><p>Message</p></label>
+            <textarea className="message-input" type="text">
+                
+            </textarea></div>
+
+            <input type="submit" className="submit-btn" value="Submit">
+            </input>
+
+        </form>
+
+
+
         <div className="contact-div">
 
         <div className="contact-icon">
@@ -33,7 +55,7 @@ export default function ContactPage(){
             </a>
         </div>
 
-        </div>
+        </div></div>
     </div>)
       
     
