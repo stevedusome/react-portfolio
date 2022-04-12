@@ -5,10 +5,10 @@ import contacticon3 from '../assets/icons-mailbox.svg'
 import contacticon4 from '../assets/icons-instagram.svg'
 
 export default function ContactPage(){
-    return (<div>
+    return (<div  className="contact-parent">
         <h3>Contact</h3>
 
-        <div className="contact-parent">
+    
 
         <form className="contact-form">
             <div className="input-group">
@@ -56,7 +56,7 @@ export default function ContactPage(){
         </div>
 
         </div></div>
-    </div>)
+    )
       
     
 };

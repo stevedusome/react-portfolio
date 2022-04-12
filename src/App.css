@@ -365,6 +365,7 @@ inset -3px -3px 5px #ffffff;
   padding: 0em 2em;
   font-size: 1em;
   color: #3e3e3e70;
+  justify-content: center;
 }
 
 .email-label, .input-label {
@@ -416,12 +417,11 @@ width: 20%;
 
 .contact-parent {
   width: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1em;
 
 }
 
