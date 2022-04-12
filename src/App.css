@@ -522,6 +522,14 @@ width: 20%;
   align-items: center;
 }
 
+.contact-form {
+  width: 90%;
+}
+
+.email-input, .message-input {
+  width: 100%;
+}
+
 
 
 h3 {
